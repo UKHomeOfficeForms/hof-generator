@@ -8,7 +8,8 @@ const cli = require('../');
 program.version(pkg.version)
   .command('init [dir]')
   .description('initialise a hof project at <dir>')
-  .option('-a', '--app <app>', 'name of initial app to create', /^[a-z\-]+$/)
+  .option('-a, --app <app>', 'name of initial app to create', /^[a-z\-]+$/)
+  .option('-f, --force', 'force overwrite existing app')
   .action((dir, settings) => {
     cli.init(dir, settings)
       .catch((e) => {
