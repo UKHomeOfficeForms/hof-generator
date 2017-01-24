@@ -1,0 +1,9 @@
+extends:
+- "homeoffice/config/default"
+
+rules:
+  consistent-return: off
+  no-console: off
+
+env:
+  es6: true
