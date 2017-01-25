@@ -1,0 +1,26 @@
+{
+  "licence": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "test": "npm run test:lint",
+    "test:lint": "eslint .",
+    "build": "npm run build:js && npm run build:sass && npm run build:translate",
+    "build:js": "mkdir -p ./public/js && browserify ./assets/js/index.js > ./public/js/bundle.js",
+    "build:sass": "mkdir -p ./public/css && npm-sass ./assets/scss/app.scss > ./public/css/app.css",
+    "build:translate": "hof-transpiler ./apps/**/translations/src -w --shared ./node_modules/hof-template-partials/translations",
+    "prepublish": "npm run build",
+    "prestart": "npm run build:translate"
+  },
+  "dependencies": {
+    "hof-bootstrap": "^8.1.0",
+    "hof-frontend-toolkit": "^1.0.0",
+    "hof-template-partials": "^3.2.0",
+    "hof-transpiler": "^0.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "eslint": "^3.14.0",
+    "eslint-config-homeoffice": "^2.0.0",
+    "npm-sass": "^1.3.0"
+  }
+}

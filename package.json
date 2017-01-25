@@ -1,0 +1,34 @@
+{
+  "name": "hof-generator",
+  "version": "0.0.0",
+  "description": "CLI to quickly generate the file and folder structure for a basic hof app",
+  "main": "index.js",
+  "bin": {
+    "hof": "bin/hof"
+  },
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOfficeForms/hof-generator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UKHomeOfficeForms/hof-generator/issues"
+  },
+  "homepage": "https://github.com/UKHomeOfficeForms/hof-generator#readme",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "commander": "^2.9.0",
+    "glob": "^7.1.1",
+    "lodash.some": "^4.6.0",
+    "mkdirp": "^0.5.1",
+    "mu2": "^0.5.21"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-homeoffice": "^2.0.0"
+  }
+}

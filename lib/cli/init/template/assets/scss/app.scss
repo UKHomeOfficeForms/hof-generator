@@ -1,0 +1,5 @@
+@import "hof-frontend-toolkit/assets/stylesheets/app.scss";
+
+.phase-banner {
+  @include phase-banner(beta);
+}
