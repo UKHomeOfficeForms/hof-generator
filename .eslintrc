@@ -4,6 +4,7 @@ extends:
 rules:
   consistent-return: off
   no-console: off
+  implicit-dependencies/no-implicit: warn
 
 env:
   es6: true
