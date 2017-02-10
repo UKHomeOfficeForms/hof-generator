@@ -1,5 +1,5 @@
 {
-  "licence": "MIT",
+  "license": "MIT",
   "scripts": {
     "start": "node app.js",
     "test": "npm run test:lint",
