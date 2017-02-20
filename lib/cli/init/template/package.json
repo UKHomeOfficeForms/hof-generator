@@ -16,12 +16,12 @@
     "hof-bootstrap": "^10.0.0",
     "hof-frontend-toolkit": "^1.0.1",
     "hof-template-partials": "^3.2.0",
-    "hof-transpiler": "^0.2.0"
+    "hof-transpiler": "^0.2.0",
+    "npm-sass": "^1.3.0"
   },
   "devDependencies": {
     "browserify": "^13.3.0",
     "eslint": "^3.14.0",
-    "eslint-config-homeoffice": "^2.1.0",
-    "npm-sass": "^1.3.0"
+    "eslint-config-homeoffice": "^2.1.0"
   }
 }
