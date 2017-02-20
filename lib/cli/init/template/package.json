@@ -12,9 +12,8 @@
     "prestart": "npm run build:translate"
   },
   "dependencies": {
-    "hof-bootstrap": "^9.0.0",
-    "hof-confirm-controller": "^1.0.1",
-    "hof-controllers": "^6.0.1",
+    "hof-behaviour-summary-page": "^2.0.0",
+    "hof-bootstrap": "^10.0.0",
     "hof-frontend-toolkit": "^1.0.1",
     "hof-template-partials": "^3.2.0",
     "hof-transpiler": "^0.2.0"
