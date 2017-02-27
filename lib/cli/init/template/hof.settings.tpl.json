@@ -1,7 +1,6 @@
 {
   "routes": [],
   "session": {
-    "name": "{{dirname}}.hof.sid",
-    "secret": "{{secret}}"
+    "name": "{{dirname}}.hof.sid"
   }
 }
