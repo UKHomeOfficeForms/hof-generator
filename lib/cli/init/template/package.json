@@ -7,15 +7,14 @@
     "build": "npm run build:js && npm run build:sass && npm run build:translate",
     "build:js": "mkdir -p ./public/js && browserify ./assets/js/index.js > ./public/js/bundle.js",
     "build:sass": "mkdir -p ./public/css && npm-sass ./assets/scss/app.scss > ./public/css/app.css",
-    "build:translate": "hof-transpiler ./apps/**/translations/src -w --shared ./node_modules/hof-template-partials/translations",
+    "build:translate": "hof-transpiler ./apps/**/translations/src -w",
     "prepublish": "npm run build",
     "prestart": "npm run build:translate"
   },
   "dependencies": {
     "hof-behaviour-summary-page": "^2.0.0",
-    "hof-bootstrap": "^10.0.0",
-    "hof-frontend-toolkit": "^1.0.1",
-    "hof-template-partials": "^3.2.0",
+    "hof-bootstrap": "^10.3.0",
+    "hof-frontend-toolkit": "^1.1.0",
     "hof-transpiler": "^0.2.0",
     "npm-sass": "^1.3.0"
   },
