@@ -5,6 +5,10 @@ const program = require('commander');
 const pkg = require('../package.json');
 const cli = require('../');
 
+const notifier = require('update-notifier');
+
+notifer({ pkg }).notify();
+
 program.version(pkg.version)
   .command('init [dir]')
   .description('initialise a hof project at <dir>')
