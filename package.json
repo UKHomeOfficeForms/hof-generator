@@ -31,5 +31,6 @@
   "devDependencies": {
     "eslint": "^3.14.0",
     "eslint-config-homeoffice": "^2.0.0"
-  }
+  },
+  "keywords": []
 }

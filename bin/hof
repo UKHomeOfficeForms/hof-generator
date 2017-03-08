@@ -31,6 +31,18 @@ program.version(pkg.version)
       });
   });
 
+program.version(pkg.version)
+  .command('behaviour [dir]')
+  .description('initialise a new hof behaviour at <dir>')
+  .option('-n, --name <name>', 'name of initial behaviour to create', /^[a-z\-]+$/)
+  .option('-f, --force', 'force overwrite existing behaviour')
+  .action((dir, settings) => {
+    cli.behaviour(dir, settings)
+      .catch((e) => {
+        console.error(e.message);
+      });
+  });
+
 if (!process.argv.slice(2).length) {
   program.outputHelp();
 }

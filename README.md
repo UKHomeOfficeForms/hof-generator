@@ -37,3 +37,15 @@ $ hof app <name>
 Once you have created a new app, you can run it locally with `npm start` - *Note: this will need a local redis instance running*. You can then access your service in a browser at `http://localhost:8080`.
 
 Alternatively, a basic docker-compose configuration is included, which will bundle redis and an nginx proxy. Run `docker-compose up` to start these services. You can then access your service in a browser at `https://localhost`.
+
+## Init a hof behaviour
+Create a brand new hof behaviour in a directory:
+
+```
+$ hof behaviour [dir] [--name <name>]
+```
+
+### Options
+
+* `dir` - the root directory of your application - Default `.`
+* `name` - the name of your hof behaviour - Default `default-behaviour`
