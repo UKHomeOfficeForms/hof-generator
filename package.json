@@ -7,7 +7,7 @@
     "hof": "bin/hof"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint . && eslint bin/*"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "eslint": "^3.14.0",
-    "eslint-config-homeoffice": "^2.0.0"
+    "eslint-config-homeoffice": "^2.1.2"
   }
 }
