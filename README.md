@@ -20,7 +20,7 @@ $ hof init [dir] [--app <name>]
 ### Options
 
 * `dir` - the root directory of your application - Default `.`
-* `app` - the name of your first application - Default `default-app`
+* `app` - the name of your first application - Defaults to the name of the target directory
 
 Create a new app in an existing hof project:
 
