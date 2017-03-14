@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const program = require('commander');
 
@@ -7,7 +8,7 @@ const cli = require('../');
 
 const notifier = require('update-notifier');
 
-notifer({ pkg }).notify();
+notifier({ pkg }).notify();
 
 program.version(pkg.version)
   .command('init [dir]')
