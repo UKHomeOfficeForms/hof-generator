@@ -10,4 +10,5 @@ RUN yum clean all && \
 
 COPY . /app
 
-CMD node /app/app.js
+CMD cd /app
+CMD npm start
