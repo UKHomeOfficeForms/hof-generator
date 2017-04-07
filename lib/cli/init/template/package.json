@@ -11,7 +11,7 @@
   "dependencies": {
     "hof-behaviour-summary-page": "^2.0.0",
     "hof-bootstrap": "^10.3.0",
-    "hof-build": "^1.0.1",
+    "hof-build": "^1.1.0",
     "hof-frontend-toolkit": "^1.1.0"
   },
   "devDependencies": {
