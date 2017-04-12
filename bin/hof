@@ -15,6 +15,7 @@ program.version(pkg.version)
   .description('initialise a hof project at <dir>')
   .option('-a, --app <app>', 'name of initial app to create', /^[a-z\-]+$/)
   .option('-f, --force', 'force overwrite existing app')
+  .option('--phase <phase>', 'application phase - e.g. "alpha", "beta"', /^alpha|beta$/)
   .option('-v, --verbose', 'toggle verbose output to stdout')
   .action((dir, settings) => {
     cli.init(dir, settings)
