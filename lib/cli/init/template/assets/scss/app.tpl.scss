@@ -1,4 +1,4 @@
-@import "hof-frontend-toolkit";
+@import "$$theme";
 
 .phase-banner {
   @include phase-banner({{phase}});
