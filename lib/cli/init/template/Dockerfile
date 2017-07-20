@@ -1,14 +1,13 @@
-FROM quay.io/ukhomeofficedigital/nodejs-base:v6.9.1
+FROM quay.io/ukhomeofficedigital/nodejs-base:v6
 
 RUN mkdir /public
-RUN yum clean all && \
-  yum update -y -q && \
-  yum install -y -q git && \
-  yum clean all && \
-  rpm --rebuilddb && \
-  npm install -g npm@latest --loglevel warn
 
+COPY package.json /app/package.json
+RUN npm --loglevel warn install --production
 COPY . /app
+RUN npm --loglevel warn run postinstall --production
+RUN chown -R nodejs:nodejs /public
 
-CMD cd /app
-CMD npm start
+USER nodejs
+
+CMD ["/app/run.sh"]
