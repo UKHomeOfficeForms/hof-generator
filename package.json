@@ -1,6 +1,6 @@
 {
   "name": "hof-generator",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "CLI to quickly generate the file and folder structure for a basic hof app",
   "main": "index.js",
   "bin": {
