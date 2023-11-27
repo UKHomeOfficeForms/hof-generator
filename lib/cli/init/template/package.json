@@ -9,9 +9,9 @@
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "hof": "^17.0.2",
+    "hof": "^19.0.0",
     "hof-behaviour-summary-page": "^2.0.0",
-    "hof-build": "^1.3.4"
+    "hof-build": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^3.14.0",
