@@ -11,7 +11,7 @@
   "dependencies": {
     "hof": "^20.5.5",
     "hof-behaviour-summary-page": "^2.0.0",
-    "hof-build": "^1.3.4"
+    "hof-build": "^4.0.1"
   },
   "devDependencies": {
     "eslint": "^3.14.0",
